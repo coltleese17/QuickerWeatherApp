@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Weather Application</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/site.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1 id="weatherHeader">  Weather Application </h1>
+        </div>
+        <div class="searchFormWrapper">
+            <form id="searchForm">
+                <input id="inputCityOrZip" class="form-control" type="search" placeholder="Search City or Zip Code">
+                <button id="submitBtn" class="btn btn-primary" type="submit">Submit</button>
+                
+                <div id="btnToggle" class="d-block my-3">
+                    <div class="custom-control custom-radio">
+                        <input id="daily" name="forecastType" type="radio" class="custom-control-input" checked value="daily">
+                        <label class="custom-control-label" for="daily">Daily Forecast</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="fiveDay" name="forecastType" type="radio" class="custom-control-input" value="fiveDay">
+                        <label class="custom-control-label" for="fiveDay">Five Day Forecast</label>
+                    </div>
+                </div>
+                <div id="formErrorMsg"> Please enter a valid City or Zip Code</div> 
+            </form>    
+        </div>
+
+        <div id="weatherSummary">
+            <div id="cityName">City: </div>
+            <div id="countryName">Country: </div>
+            <div id="sunriseTime">Sunrise: </div>
+            <div id="sunsetTime">Sunset: </div>
+            <div id="temperature">Temp: </div>
+            <div id="feelsLike">Feels Like: </div>
+            <div id="humidity">Humidity: </div>
+            <div id="pressure">Pressure: </div>
+            <div id="windSpeed">Wind Speed: </div>
+            <div id="windDirection">Wind Direction: </div>
+            <div id="cloudsDescription">Clouds Description: </div>
+            <div id="visibility">Visibility: </div>
+            <div id="lastUpdated">Last Updated: </div>
+        </div>
+
+        <!-- //to add  -->
+        
+        <!-- <div id="forecastSummary">
+            <div id="cityName">City: </div>
+            <div id="countryName">Country: </div>
+            <div id="temperature">Temp: </div>
+            <div id="feelsLike">Feels Like: </div>
+            <div id="windSpeed">Wind Speed: </div>
+            <div id="windDirection">Wind Direction: </div>
+        </div> -->
+    </body> 
+</html>    

@@ -1,0 +1,22 @@
+#weatherHeader {
+    color: black;
+    text-align:center;
+    font-weight:bold;
+}
+
+.searchFormWrapper {
+    text-align:center;
+}
+
+#inputCityOrZip {
+    width: 175px;
+}
+
+#formErrorMsg {
+    display:none;
+    color:red;
+}
+
+#weatherSummary {
+    display:none;
+}
